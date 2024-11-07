@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from "./components/Navbar.js";
 import HomePage from "./components/HomePage.js";
+import FloatingCodeBackground from "./components/FloatingCodeBackground.js";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <section id="home" className="navbar-section">
           <HomePage></HomePage>
       </section>
-      <p>Coming Soon! (Updated Nov 6)</p>
+      <FloatingCodeBackground />
 
     </div>
   );

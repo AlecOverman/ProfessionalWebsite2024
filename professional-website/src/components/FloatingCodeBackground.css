@@ -1,24 +1,25 @@
 /* Full-screen background container for code segments */
 .floating-code-container {
     background-color: rgb(0, 0, 0);
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow: visible;
     z-index: -1; /* Keeps it behind other content */
   }
   
   /* Style for each code segment */
   .floating-code {
-    position: fixed; /* Keeps each code segment within the viewport */
+    position: absolute; /* Keeps each code segment within the viewport */
     font-family: monospace;
-    font-size: 14px;
-    color: rgba(10, 127, 96, 0.7);
+    font-size: 1vw;
+    color: rgba(50, 170, 102, 0.7);
     white-space: nowrap;
     opacity: 0.9;
     animation: floatInPlace linear infinite;
+    z-index: -1; /* Keeps it behind other content */
   }
   
   /* Animation to make code segments "float" in place */
@@ -39,5 +40,3 @@
       transform: translate(0px, 0px);
     }
   }
-
-  

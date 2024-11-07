@@ -55,29 +55,6 @@
 }
 
 
-/* Full-screen background container for code segments */
-.floating-code-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  z-index: -1; /* Behind other content */
-}
-
-/* Individual code segment style */
-.floating-code {
-  position: absolute;
-  bottom: -50px; /* Start just below the viewport */
-  font-family: monospace;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.7); /* Light code color */
-  white-space: nowrap;
-  opacity: 0;
-  animation: floatUp linear forwards;
-}
-
 /* Floating animation */
 @keyframes floatUp {
   0% {
@@ -94,9 +71,4 @@
     transform: translateY(-100vh);
     opacity: 0;
   }
-}
-
-.example{
-  color: aliceblue;
-  z-index: -1;
 }

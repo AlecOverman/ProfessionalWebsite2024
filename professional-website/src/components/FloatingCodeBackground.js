@@ -1,8 +1,10 @@
 // src/FloatingCodeBackground.js
 import React, { useEffect } from 'react';
 import './FloatingCodeBackground.css';
+import FadingText from './FadingText';
 
 function FloatingCodeBackground() {
+  const texts = ["Hello, world!", "Welcome to my site", "Enjoy your stay", "Contact me anytime!"];
   useEffect(() => {
     const codeContainer = document.querySelector('.floating-code-container');
 
@@ -31,7 +33,9 @@ function FloatingCodeBackground() {
     }
   }, []);
 
-  return <div className="floating-code-container"></div>;
+  return <div className="floating-code-container">
+        <FadingText texts={texts} interval={3000} />
+  </div>;
 }
 
 export default FloatingCodeBackground;

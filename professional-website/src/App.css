@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -28,6 +30,12 @@
   color: #61dafb;
 }
 
+#home{
+  height: 4em;
+  position: relative;
+  width: 100vw;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +44,5 @@
     transform: rotate(360deg);
   }
 }
+
+
